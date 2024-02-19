@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\agent.json" />
+    <None Remove="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\functions.json" />
+    <None Remove="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\instruction.liquid" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\agent.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\functions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\agents\41af73f9-295b-4ec2-8b30-745dfc7eb9e1\instruction.liquid">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\BotSharp.Abstraction\BotSharp.Abstraction.csproj" />
+  </ItemGroup>
+
+</Project>
