@@ -6,6 +6,8 @@ using BotSharp.Abstraction.Repositories.Filters;
 using BotSharp.Abstraction.Repositories.Models;
 using BotSharp.Abstraction.Tasks.Models;
 using BotSharp.Abstraction.Users.Models;
+using BotSharp.Abstraction.Wiki.Models;
+
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace BotSharp.Core.Repository;
@@ -285,5 +287,18 @@ public class BotSharpDbContext : Database, IBotSharpRepository
     {
         throw new NotImplementedException();
     }
+    #endregion
+
+    #region Wiki
+    public void UpsertPage(WikiPage wikiPage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public WikiPage? GetPage(string conversationId, string title)
+    {
+        throw new NotImplementedException();
+    }
+
     #endregion
 }
