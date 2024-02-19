@@ -27,7 +27,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\tests\BotSharp.Plugin.PizzaBot\BotSharp.Plugin.PizzaBot.csproj" />
+    <ProjectReference Include="..\Plugins\BotSharp.Plugin.AzureOpenAI\BotSharp.Plugin.AzureOpenAI.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.Dashboard\BotSharp.Plugin.Dashboard.csproj" />
+    <ProjectReference Include="..\Plugins\BotSharp.Plugin.OpenAI\BotSharp.Plugin.OpenAI.csproj" />
   </ItemGroup>
   
   <ItemGroup Condition="$(SolutionName)==BotSharp">
@@ -36,7 +38,6 @@
     <ProjectReference Include="..\Infrastructure\BotSharp.OpenAPI\BotSharp.OpenAPI.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.GoogleAI\BotSharp.Plugin.GoogleAI.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.MongoStorage\BotSharp.Plugin.MongoStorage.csproj" />
-    <ProjectReference Include="..\Plugins\BotSharp.Plugin.AzureOpenAI\BotSharp.Plugin.AzureOpenAI.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.ChatbotUI\BotSharp.Plugin.ChatbotUI.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.HuggingFace\BotSharp.Plugin.HuggingFace.csproj" />
     <ProjectReference Include="..\Plugins\BotSharp.Plugin.KnowledgeBase\BotSharp.Plugin.KnowledgeBase.csproj" />
